@@ -1,0 +1,25 @@
+
+to open toplevel:
+utop
+
+
+to compile:
+ocamlc -o <file>.byte <file>.ml
+
+to run compiled:
+./<file>.byte
+
+to build:
+ocamlbuild <file>.byte
+
+SANITIZE error
+then run following scripts:
+_build/sanitize.sh
+rm <file>.byte
+
+
+to clean up compiled code:
+ocamlbuild -clean
+
+to use code from a file to toplevel:
+#use "<filename>.ml";;
